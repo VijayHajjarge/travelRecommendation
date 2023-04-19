@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<h1>Home</h1>
+<%= home_strating_content %>
+
+<form action="/submit" method="POST">
+  <label for="userId">User ID : </label>
+  <input type="text" id="userId" name="userId">
+
+  <label for="placeId">Place ID : </label>
+  <input type="text" id="placeId" name="placeId">
+
+  <label for="rating">Email:</label>
+  <input type="text" id="rating" name="rating">
+
+  <button type="submit">Submit</button>
+</form>
+
+<%- include("partials/footer") %>
